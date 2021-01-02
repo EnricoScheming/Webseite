@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de"> <!-- Webseite wird als eine deutsche deklariert -->
+<head> <!--  -->
+  <link rel="stylesheet" href="farben.css"> <!-- Die css Datei wird extern aufgerufen -->
+  <meta charset="utf-8"> <!-- Damit Sonderzeichen wie ä richtig angezeigt werden -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manni Entertainment</title> <!-- Damit die Suchmaschinen wissen was gesucht werden muss -->
+<style>
+* {
+  box-sizing: border-box;
+}
+.box {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clearfix {
+  overflow: auto;
+}
+header {
+    text-shadow: 1px 1px black;
+    font-size: 30px;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-right: 30px;
+    color: white;
+    float: left;
+  }
+ul {
+  font-size: 25px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: rgb(105,105,105,1);
+  border-style: solid;
+  border-width: thin;
+}
+li {
+  float: left;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  background-color: rgb(105,105,105,1);
+  background-attachment: fixed;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #bbb;
+}
+.active {
+  background-color: rgb(105,105,105,1);
+}
+li:last-child {
+  border-left: none;
+}
+ul {
+  position: fixed;
+  top: 8px;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+  <header class="clearfix">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li style="float:right"><a  href="#about">About</a></li>
+    </ul>
+  </header>
+
+ <nav class="clearfix abstand hauptteil">
+<h1>Manni Entertainment NAV</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ </nav>
+<hr>
+ <section class="clearfix abstand hauptteil">
+   <h1>Manni Entertainment SECTION</h1>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+   <div class="clearfix">
+  <div class="box" style="background-color:none">
+  <h2>Das Neuste Video </h2>
+  <div class="videobereich">
+<iframe class="videoextern" width="640" height="360" src="https://www.youtube.com/embed/ezzELxWBenM?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+  <div class="box" style="background-color:none">
+  <h2>Das mit der größten Beliebheit</h2>
+  <div class="videobereich">
+  <iframe class="videoextern" width="640" height="360"
+  src="https://www.youtube.com/embed/yac0j_sANK8?rel=0"
+   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+ </section>
+<hr>
+ <footer class="clearfix abstand hauptteil">
+   <h1>Manni Entertainment FOOTER</h1>
+   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+ </footer>
+
+</body>
+</html>
